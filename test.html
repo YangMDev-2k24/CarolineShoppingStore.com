@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Four-Column Layout</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+    .column {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .social-icons a {
+      margin-right: 10px;
+      font-size: 1.5rem;
+      color: #555;
+    }
+    .social-icons a:hover {
+      color: #007bff;
+    }
+    .payment-icons i {
+      font-size: 2rem;
+      margin-right: 15px;
+      color: #444;
+    }
+    .payment-icons i:hover {
+      color: #007bff;
+    }
+    .quick-links a {
+      display: block;
+      color: #007bff;
+      text-decoration: none;
+      margin-bottom: 10px;
+    }
+    .quick-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container my-5">
+    <div class="row gy-4">
+      <!-- Column 1: About -->
+      <div class="col-md-3">
+        <div class="column">
+          <h4>About Us</h4>
+          <p>We are dedicated to providing top-notch services to our clients, ensuring satisfaction and excellence in every project.</p>
+        </div>
+        <div class="column mt-3">
+          <h4>Quick Links</h4>
+          <div class="quick-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#">FAQs</a>
+          </div>
+        </div>
+      </div>
+      <!-- Column 2: Contact Form -->
+      <div class="col-md-3">
+        <div class="column">
+          <h4>Contact Us</h4>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
+      </div>
+      <!-- Column 3: Services -->
+      <div class="col-md-3">
+        <div class="column">
+          <h4>Services</h4>
+          <ul>
+            <li>Web Development</li>
+            <li>Mobile App Development</li>
+            <li>Digital Marketing</li>
+            <li>Graphic Design</li>
+          </ul>
+        </div>
+        <div class="column mt-3">
+          <h4>Payment Methods</h4>
+          <div class="payment-icons">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-paypal"></i>
+            <i class="fas fa-university"></i> <!-- For bank transfer -->
+          </div>
+        </div>
+      </div>
+      <!-- Column 4: Social Media, Mobile App, Newsletters -->
+      <div class="col-md-3">
+        <div class="column">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="column mt-3">
+          <h4>Mobile App</h4>
+          <p>Download our mobile app for easy access:</p>
+          <a href="#"><i class="fab fa-apple fa-2x"></i></a>
+          <a href="#"><i class="fab fa-google-play fa-2x"></i></a>
+        </div>
+        <div class="column mt-3">
+          <h4>Newsletter</h4>
+          <p>Subscribe to our newsletter to get the latest updates:</p>
+          <form>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Enter your email">
+            </div>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and Font Awesome -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
